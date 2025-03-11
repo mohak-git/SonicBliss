@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sonic Bliss - by Mohak</title>
+    <link
+      rel="shortcut icon"
+      href="../0 - SampleFiles/Logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Imperial+Script&family=Lovers+Quarrel&family=Manrope:wght@200..800&family=Pompiere&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Imperial+Script&family=Lovers+Quarrel&family=Manrope:wght@200..800&family=Pompiere&family=Satisfy&family=UnifrakturMaguntia&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header" id="top">
+      <h1 class="productName">Sonic Bliss</h1>
+      <h2 class="productName">- by Mohak</h2>
+      <div class="authAndSearchSection">
+        <div class="authContainer">
+          <button class="authButton">Authenticate Me</button>
+        </div>
+        <div class="searchContainer">
+          <fieldset>
+            <label for="searchPlaylist">PlayList ID :</label>
+            <input type="text" class="searchPlaylist" id="searchPlaylist" placeholder="Enter PlayList Id..." required >
+          </fieldset>
+          <a href="#SongsPage"><button class="startButton">Start</button></a>
+        </div>
+      </div>
+    </header>
+    <main class="page2" id="SongsPage">
+      <div class="songCardContainer">
+        <div class="songDetails">
+          <h2 class="songTitle">Song Title</h2>
+          <h3 class="singer">Singer</h3>
+        </div>
+        <img alt="Poster" class="songPoster" />
+        <audio class="song" loop></audio>
+        <div class="progress">
+          <div class="progressTime">
+            <span class="startTime">0:00</span>
+            <span class="endTime">3:00</span>
+          </div>
+          <div class="progressBar"></div>
+        </div>
+        <div class="navigate">
+          <button class="playButton">
+            <img
+              src="images/playButton.svg"
+              alt="Play Button"
+              class="playButtonImage"
+            />
+          </button>
+          <button class="pauseButton">
+            <img
+              src="images/pauseButton.svg"
+              alt="Pause Button"
+              class="pauseButtonImage"
+            />
+          </button>
+          <button class="nextButton">
+            <img
+              src="images/nextButton.svg"
+              alt="Next Button"
+              class="nextButtonImage"
+            />
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer" id="bottom">
+      <code id="copyright"
+        >Copyleft © 2024 Mo&Shuru. Some rights reserved!</code
+      >
+      <a href="#top">Go to Top</a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
